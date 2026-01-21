@@ -26,7 +26,7 @@ public class BookService {
     }
 
     public Book updateBook(Long id, Book bookDetails) {
-        Book book = getBook(id); // Получаем существующую книгу
+        Book book = getBook(id);
         book.setTitle(bookDetails.getTitle());
         book.setAuthor(bookDetails.getAuthor());
         book.setPublicationYear(bookDetails.getPublicationYear());
