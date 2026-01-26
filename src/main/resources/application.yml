@@ -1,0 +1,24 @@
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          github:
+            client-id: Ov23lilwYMVHFmGdxDqE
+            client-secret: c0740952478a2adcb6a29780410485d3ab398e0f
+            scope: read:user,user:email
+
+
+  thymeleaf:
+    cache: false
+    prefix: classpath:/templates/
+    suffix: .html
+
+server:
+  port: 8080
+logging:
+  level:
+    com.example.demo: DEBUG
+    org.springframework.security: INFO
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} - %msg%n"
